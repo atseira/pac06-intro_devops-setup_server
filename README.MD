@@ -1,4 +1,12 @@
 # Intro to DevOps
+Keterangan untuk Evaluator dari Pacmann:
+Pengerjaan project ini belum lengkap. Untuk Video di YouTube, penulis hanya memberikan live demo singkat bahwa project Twitter Clone sudah dapat diakses secara live lewat sebuah subdomain (http://pac.coffeecodechem.com). Video YouTube: https://youtu.be/BStg3k9c7_E
+Untuk beberapa poin yang masih kurang:
+- Tidak ada HTTPS. Sudah dicoba untuk setup tapi SSL hanya berhasil di Frontend saja, untuk port-port 5000 (Flask) dan 9000 (MinIO) belum berhasil, sehingga penulis me-revert kembali hanya dengan HTTP tanpa SSL.
+- Belum diterapkan sistem CI/CD menggunakan GitHub Actions.
+Catatan tambahan:
+- Docker sudah diterapkan dari term sebelumnya di kelas sebelumnya.
+
 # Persiapan server
 ## Update server
 Sumber: [Install Docker Engine on Ubuntu | Docker Docs](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
@@ -112,8 +120,6 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
     }
-
-  
 
     location /minio {
         proxy_pass http://127.0.0.1:9000/;
