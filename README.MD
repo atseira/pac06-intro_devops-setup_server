@@ -159,5 +159,5 @@ Setelah itu, website sudah dapat diakses live.
 Dalam case ini, website dapat diakses di http://pac.coffeecodechem.com
 
 # Screenshot website live
-[Tampilan homepage dengan twit-twit yang sudah ada](tampilan-frontend.png)
-[Tampilan backend /admin setelah login](tampilan-backend-admin-login.png)
+![Tampilan homepage dengan twit-twit yang sudah ada](tampilan-frontend.png)
+![Tampilan backend /admin setelah login](tampilan-backend-admin-login.png)
