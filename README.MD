@@ -1,6 +1,7 @@
 # Intro to DevOps
 Keterangan untuk Evaluator dari Pacmann:
-Pengerjaan project ini belum lengkap. Untuk Video di YouTube, penulis hanya memberikan live demo singkat bahwa project Twitter Clone sudah dapat diakses secara live lewat sebuah subdomain (http://pac(dot)coffeecodechem(dot)com). Video YouTube: https://youtu.be/BStg3k9c7_E
+Pengerjaan project ini belum lengkap. Untuk Video di YouTube, penulis hanya memberikan live demo singkat bahwa project Twitter Clone sudah dapat diakses secara live lewat sebuah subdomain `http://pac(dot)coffeecodechem(dot)com`. Video YouTube: https://youtu.be/BStg3k9c7_E
+
 Untuk beberapa poin yang masih kurang:
 - Tidak ada HTTPS. Sudah dicoba untuk setup tapi SSL hanya berhasil di Frontend saja, untuk port-port 5000 (Flask) dan 9000 (MinIO) belum berhasil, sehingga penulis me-revert kembali hanya dengan HTTP tanpa SSL.
 - Belum diterapkan sistem CI/CD menggunakan GitHub Actions.
@@ -94,8 +95,8 @@ git clone https://github.com/atseira/pac05b-twitter_clone_vue.git
 Untuk folder pac05a... beri nama sebagai `klonx`.
 Untuk folder pac05b sebagai `klonx-vue`.
 
-Ada beberapa penyesuaian yang perlu dilakukan, untuk CORS perlu disesuaikan dengan subdomain yang digunakan. Dalam case ini pac(dot)coffeecodechem(dot)com.
-Lalu di dalam Project Vue, juga perlu diganti untuk semua API endpoint-nya diarahkan ke http://pac(dot)coffeecodechem(dot)com:5000/.
+Ada beberapa penyesuaian yang perlu dilakukan, untuk CORS perlu disesuaikan dengan subdomain yang digunakan. Dalam case ini `pac(dot)coffeecodechem(dot)com`.
+Lalu di dalam Project Vue, juga perlu diganti untuk semua API endpoint-nya diarahkan ke `http://pac(dot)coffeecodechem(dot)com:5000/`.
 
 Setelah itu kita masuk ke dalam folder `klonx` (rep `pac05a-...`) dan jalankan
 ```
@@ -156,7 +157,7 @@ Jika aman, bisa kita restart nginx:
 service nginx restart
 ```
 Setelah itu, website sudah dapat diakses live.
-Dalam case ini, website dapat diakses di http://pac(dot)coffeecodechem(dot)com
+Dalam case ini, website dapat diakses di `http://pac(dot)coffeecodechem(dot)com`
 
 # Screenshot website live
 ![Tampilan homepage dengan twit-twit yang sudah ada](tampilan-frontend.png)
