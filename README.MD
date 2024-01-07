@@ -4,6 +4,7 @@ Pengerjaan project ini belum lengkap. Untuk Video di YouTube, penulis hanya memb
 Untuk beberapa poin yang masih kurang:
 - Tidak ada HTTPS. Sudah dicoba untuk setup tapi SSL hanya berhasil di Frontend saja, untuk port-port 5000 (Flask) dan 9000 (MinIO) belum berhasil, sehingga penulis me-revert kembali hanya dengan HTTP tanpa SSL.
 - Belum diterapkan sistem CI/CD menggunakan GitHub Actions.
+
 Catatan tambahan:
 - Docker sudah diterapkan dari term sebelumnya di kelas sebelumnya.
 
@@ -105,7 +106,7 @@ Dan
 docker-compose up -d
 ```
 Untuk menjalankan server Vue, Flask, dan MinIO di port-nya masing-masing.
-![[Pasted image 20240107232722.png]]
+![Hasil docker-compose up](docker-compose_up.png)
 ### Setup konfigurasi Nginx
 Di dalam `/etc/nginx/sites-available` kita buat sebuah file konfigurasi, misalkan bernama `konfigwebsite.conf` sebagai berikut:
 ```
@@ -156,3 +157,7 @@ service nginx restart
 ```
 Setelah itu, website sudah dapat diakses live.
 Dalam case ini, website dapat diakses di http://pac.coffeecodechem.com
+
+# Screenshot website live
+[Tampilan homepage dengan twit-twit yang sudah ada](tampilan-frontend.png)
+[Tampilan backend /admin setelah login](tampilan-backend-admin-login.png)
